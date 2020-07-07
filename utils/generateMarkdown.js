@@ -3,7 +3,7 @@ function generateMarkdown(data) {
   return `
 
 # ${data.Title}
-![badmath](https://img.shields.io/github/languages/top/nielsenjared/badmath)
+
 
 
 ## Table of Contents
