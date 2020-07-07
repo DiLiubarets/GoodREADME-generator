@@ -1,105 +1,93 @@
-const inquirer = require('inquirer')
-const fs = require('fs')
-const generatorMarkdown = require('./utils/generateMarkdown')
-
+const fs = require("fs");
+const axios = require("axios");
+const inquirer = require("inquirer");
+const generateMarkdown = require("./utils/generateMarkdown");
 
 // array of questions for user
 const questions = [
     {
         type: "input",
-        message: "What is your GitHub user name?",
-        name: "username"
-    },
-    {
-        type: "input",
         message: "What is your Project Tittle?",
-        name: "projectTittle"
+        name: "Title"
     },
     {
         type: "input",
-        message: "Description for you project...",
-        name: "projectDescription"
+        message: "Description of your project?",
+        name: "Description"
     },
     {
         type: "input",
         message: "What are the steps required to install your project? (Write NONE if no instructions) ",
-        name: "installation"
+        name: "Install"
     },
     {
         type: "input",
         message: "Provide instructions for use.",
-        name: "instruction"
+        name: "Usage"
     },
     {
-        type: "input",
+        type: "list",
         message: "Select a license",
-        choices: ["Apache", "MIT", "ISC", "GNU GPLv3"],
-        name: "license"
+        name: "License",
+        choices: [
+            "MIT License",
+            "GVL GPL License",
+            "Apache License",
+            "None"
+        ]
     },
     {
         type: "input",
-        message: "What is your email address?",
-        name: "email"
+        message: "Are there any Contributors?",
+        name: "Contributors"
     },
-   
+    {
+        type: "input",
+        message: "How to test the app",
+        name: "Test"
+    },
+    {
+        type: "input",
+        message: "Questions?",
+        name: "Questions"
+    },
+    {
+        type: "input",
+        message: "Your Github UserName",
+        name: "Github"
+    },
+    {
+        type: "input",
+        message: "What is your email?",
+        name: "Email"
+    }
 ];
 
-// function to write README file
+// Function to write file
 function writeToFile(fileName, data) {
-fs.writeFile(fileName, data, err => {
-    if (err){
-        throw err
+    fs.writeFile(fileName, data, (err) => {
+        if (err) {
+          throw err;
+        }
+        console.log("ReadMe was created");
+      });
     }
-})
-}
+
 
 // function to initialize program
 function init() {
-inquirer.prompt(questions).then(answer => {
-const response = generatorMarkdown(answer)
+    inquirer.prompt(questions).then((answers) => {
+        
+        const response = generateMarkdown(answers);
+        console.log(answers);
+       
+        writeToFile("README.md", response);
+      
+    })
+    
 
-writeToFile('README.md', response)
-})
 }
+
 
 // function call to initialize program
 init();
-
-
-
-
-// fs.appendFile('README.md', ('# ' + answer.username + '\n')+'\n', err => {
-//     if(err){
-//         throw err
-//     }
-// })
-// fs.appendFile('README.md', ('# ' + answer.projectTittle + '\n')+'\n', err => {
-//     if(err){
-//         throw err
-//     }
-// })
-// fs.appendFile('README.md', ('# ' + answer.projectDescription + '\n')+'\n', err => {
-//     if(err){
-//         throw err
-//     }
-// })
-// fs.appendFile('README.md', ('# ' + answer.installation + '\n')+'\n', err => {
-//     if(err){
-//         throw err
-//     }
-// })
-// fs.appendFile('README.md', ('# ' + answer.instruction + '\n')+'\n', err => {
-//     if(err){
-//         throw err
-//     }
-// })
-// fs.appendFile('README.md', ('# ' + answer.license + '\n')+'\n', err => {
-//     if(err){
-//         throw err
-//     }
-// })
-// fs.appendFile('README.md', ('# ' + answer.email + '\n')+'\n', err => {
-//     if(err){
-//         throw err
-//     }
-// })
