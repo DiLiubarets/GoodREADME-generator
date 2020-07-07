@@ -17,7 +17,7 @@ Create a command-line application that dynamically generates a README.md from a 
 ## Installation
 clone repo from GitHub
 
-## Usage
+## Instructions
 run node index.js
 
 ## License
