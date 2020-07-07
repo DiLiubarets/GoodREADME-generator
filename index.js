@@ -18,16 +18,16 @@ const questions = [
     {
         type: "input",
         message: "What are the steps required to install your project? (Write NONE if no instructions) ",
-        name: "Install"
+        name: "Installation"
     },
     {
         type: "input",
         message: "Provide instructions for use.",
-        name: "Usage"
+        name: "Instructions"
     },
     {
         type: "list",
-        message: "Select a license",
+        message: "Select license name ",
         name: "License",
         choices: [
             "MIT License",
@@ -38,7 +38,7 @@ const questions = [
     },
     {
         type: "input",
-        message: "Are there any Contributors?",
+        message: "Contributors?",
         name: "Contributors"
     },
     {
@@ -54,7 +54,7 @@ const questions = [
     {
         type: "input",
         message: "Your Github UserName",
-        name: "Github"
+        name: "Username"
     },
     {
         type: "input",

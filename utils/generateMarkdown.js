@@ -9,20 +9,20 @@ function generateMarkdown(data) {
 ## Table of Contents
 * [Description](#description)
 * [Installation](#installation)
-* [Usage](#usage)
+* [Instructions](#instructions)
 * [License](#license)
 * [Contributors](#contributors)
 * [Test](#test)
 * [Questions](#questions)
 
 ## Description
-${data.Discription}
+${data.Description}
 
 ## Installation
-${data.Install}
+${data.Installation}
 
 ## Usage
-${data.Usage}
+${data.Instructions}
 
 ## License
 ${data.License}
@@ -36,7 +36,7 @@ ${data.Test}
 ## Questions
 Contact me:
 
-Github:[${data.Github}](https://github.com/DiLiubarets)
+Github:[${data.Username}](https://github.com/DiLiubarets)
 
 Email:[${data.Email}](https://github.com/DiLiubarets)
 

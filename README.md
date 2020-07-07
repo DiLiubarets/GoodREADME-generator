@@ -3,18 +3,17 @@
 # README-generator
 
 
-## Table of Contents
+## Contents
 * [Description](#description)
 * [Installation](#installation)
-* [Usage](#usage)
+* [Instructions](#instructions)
 * [License](#license)
 * [Contributors](#contributors)
 * [Test](#test)
 * [Questions](#questions)
 
 ## Description
-undefined
-
+Create a command-line application that dynamically generates a README.md from a user's input. 
 ## Installation
 clone repo from GitHub
 
@@ -22,7 +21,7 @@ clone repo from GitHub
 run node index.js
 
 ## License
-No License
+None
 
 ## Contributors
 no
@@ -31,7 +30,7 @@ no
 
 
 ## Questions
-If you want to contact me:
+Contact me:
 
 Github:[DiLiubarets](https://github.com/DiLiubarets)
 
