@@ -65,18 +65,17 @@ const questions = [
 
 // Function to write file
 function writeToFile(fileName, data) {
-    fs.writeFile(fileName, data, (err) => {
+    fs.writeFile(fileName, data, err => {
         if (err) {
           throw err;
         }
-        console.log("ReadMe was created");
       });
     }
 
 
 // function to initialize program
 function init() {
-    inquirer.prompt(questions).then((answers) => {
+    inquirer.prompt(questions).then(answers => {
         
         const response = generateMarkdown(answers);
         console.log(answers);
