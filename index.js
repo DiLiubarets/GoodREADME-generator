@@ -1,6 +1,8 @@
-const fs = require("fs");
-const inquirer = require("inquirer");
-const generateMarkdown = require("./utils/generateMarkdown");
+import { writeFile } from "fs";
+import pkg from 'inquirer';
+import generateMarkdown from "./utils/generateMarkdown.js";
+
+const { prompt } = pkg;
 
 // array of questions for user
 const questions = [
@@ -65,7 +67,7 @@ const questions = [
 
 // Function to write file
 function writeToFile(fileName, data) {
-    fs.writeFile(fileName, data, err => {
+    writeFile(fileName, data, err => {
         if (err) {
           throw err;
         }
@@ -75,7 +77,7 @@ function writeToFile(fileName, data) {
 
 // function to initialize program
 function init() {
-    inquirer.prompt(questions).then(answers => {
+    prompt(questions).then(answers => {
         
         const response = generateMarkdown(answers);
         console.log(answers);

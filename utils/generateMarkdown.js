@@ -42,4 +42,4 @@ Email:[${data.Email}](https://github.com/DiLiubarets)
 
 `;}
 
-module.exports = generateMarkdown
+export default generateMarkdown
