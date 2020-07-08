@@ -7,27 +7,37 @@ const generateMarkdown = require("./utils/generateMarkdown");
 const questions = [
     {
         type: "input",
-        message: "What is your Project Tittle?",
+        message: "What is your project title?",
         name: "Title"
     },
     {
         type: "input",
-        message: "Description of your project?",
+        message: "Describe your project",
         name: "Description"
     },
     {
         type: "input",
-        message: "What are the steps required to install your project? (Write NONE if no instructions) ",
+        message: "What are the steps required to install your project?",
         name: "Installation"
     },
     {
         type: "input",
         message: "Provide instructions for use.",
-        name: "Instructions"
+        name: "Usage"
+    },
+    {
+        type: "input",
+        message: "Contributors?",
+        name: "Contributors"
+    },
+    {
+        type: "input",
+        message: "How do you test your project?",
+        name: "Test"
     },
     {
         type: "list",
-        message: "Select license name ",
+        message: "Select license",
         name: "License",
         choices: [
             "MIT License",
@@ -38,22 +48,12 @@ const questions = [
     },
     {
         type: "input",
-        message: "Contributors?",
-        name: "Contributors"
-    },
-    {
-        type: "input",
-        message: "How to test the app",
-        name: "Test"
-    },
-    {
-        type: "input",
-        message: "Questions?",
+        message: "Contact info for further questions",
         name: "Questions"
     },
     {
         type: "input",
-        message: "Your Github UserName",
+        message: "Your Github username",
         name: "Username"
     },
     {
@@ -61,6 +61,7 @@ const questions = [
         message: "What is your email?",
         name: "Email"
     }
+    
 ];
 
 // Function to write file

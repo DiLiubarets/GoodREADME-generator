@@ -1,24 +1,26 @@
 
 
-# README-generator
+# README Generator
 
 
-## Contents
+
+## Table of Contents
 * [Description](#description)
-* [Installation](#installation)
-* [Instructions](#instructions)
+* [Installation instructions](#installation)
+* [Usage information](#usage)
 * [License](#license)
 * [Contributors](#contributors)
 * [Test](#test)
 * [Questions](#questions)
 
 ## Description
-Create a command-line application that dynamically generates a README.md from a user's input. 
-## Installation
+Create a command-line application that dynamically generates a README.md from a user's input.
+
+## Installation instructions
 clone repo from GitHub
 
-## Instructions
-run node index.js
+## Usage information
+run node index
 
 ## License
 None
