@@ -1,6 +1,6 @@
 
 
-# README Generator
+# README generator
 
 
 
@@ -14,7 +14,7 @@
 * [Questions](#questions)
 
 ## Description
-Create a command-line application that dynamically generates a README.md from a user's input.
+Create a command line application that dynamicaly generates a README.md from a user`s input
 
 ## Installation instructions
 clone repo from GitHub
@@ -29,7 +29,7 @@ None
 no
 
 ## Test
-
+run test
 
 ## Questions
 Contact me:
@@ -37,4 +37,6 @@ Contact me:
 Github:[DiLiubarets](https://github.com/DiLiubarets)
 
 Email:[di.liubarets@outlook.com](https://github.com/DiLiubarets)
+
+Video: [You can found video here ](https://youtu.be/fgNLxaP-f5M)
 
