@@ -6,21 +6,21 @@
 
 ## Table of Contents
 * [Description](#description)
-* [Installation instructions](#installation)
-* [Usage information](#usage)
+* [Installation](#installation)
+* [Usage](#usage)
 * [License](#license)
 * [Contributors](#contributors)
 * [Test](#test)
 * [Questions](#questions)
 
 ## Description
-Create a command line application that dynamicaly generates a README.md from a user`s input
+Create a command line application that dynamically generates a README.md from a user`s input
 
-## Installation instructions
+## Installation 
 clone repo from GitHub
 
-## Usage information
-run node index
+## Usage 
+run node index.js
 
 ## License
 None
@@ -37,6 +37,4 @@ Contact me:
 Github:[DiLiubarets](https://github.com/DiLiubarets)
 
 Email:[di.liubarets@outlook.com](https://github.com/DiLiubarets)
-
-Video: [You can found video here ](https://youtu.be/fgNLxaP-f5M)
 

@@ -8,8 +8,8 @@ function generateMarkdown(data) {
 
 ## Table of Contents
 * [Description](#description)
-* [Installation instructions](#installation)
-* [Usage information](#usage)
+* [Installation](#installation)
+* [Usage](#usage)
 * [License](#license)
 * [Contributors](#contributors)
 * [Test](#test)
@@ -18,10 +18,10 @@ function generateMarkdown(data) {
 ## Description
 ${data.Description}
 
-## Installation instructions
+## Installation 
 ${data.Installation}
 
-## Usage information
+## Usage 
 ${data.Usage}
 
 ## License

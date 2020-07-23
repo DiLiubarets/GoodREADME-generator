@@ -27,16 +27,6 @@ const questions = [
         name: "Usage"
     },
     {
-        type: "input",
-        message: "Contributors?",
-        name: "Contributors"
-    },
-    {
-        type: "input",
-        message: "How do you test your project?",
-        name: "Test"
-    },
-    {
         type: "list",
         message: "Select license",
         name: "License",
@@ -48,6 +38,17 @@ const questions = [
             "None"
         ]
     },
+    {
+        type: "input",
+        message: "Contributors?",
+        name: "Contributors"
+    },
+    {
+        type: "input",
+        message: "How do you test your project?",
+        name: "Test"
+    },
+    
     {
         type: "input",
         message: "Contact info for further questions",
