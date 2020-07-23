@@ -38,3 +38,5 @@ Github:[DiLiubarets](https://github.com/DiLiubarets)
 
 Email:[di.liubarets@outlook.com](https://github.com/DiLiubarets)
 
+Video: [Node.js and ES6 README Generator](https://youtu.be/fgNLxaP-f5M)
+
