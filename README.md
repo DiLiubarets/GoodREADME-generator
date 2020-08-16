@@ -17,10 +17,10 @@
 Create a command line application that dynamically generates a README.md from a user`s input
 
 ## Installation 
-clone repo from GitHub
+clone repo from GitHub: https://github.com/DiLiubarets/GoodREADME-generator.git
 
 ## Usage 
-run node index.js
+run: node index
 
 ## License
 None
